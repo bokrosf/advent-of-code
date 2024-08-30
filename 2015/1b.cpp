@@ -6,12 +6,10 @@ int main()
     std::ifstream input("input.txt");
     int floor = 0;
     int position = 0;
+    char instruction = 0;
 
-    while (!input.eof() && floor != -1)
+    while (input >> instruction && floor != -1)
     {
-        char instruction = 0;
-        input >> instruction;
-
         switch (instruction)
         {
             case '(':
