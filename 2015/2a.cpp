@@ -17,15 +17,15 @@ std::istream &operator>>(std::istream &stream, box &box);
 
 int main()
 {
-    int sum = 0;
+    int wrapping_paper_area = 0;
     box box;    
 
     while (std::cin >> box)
     {
-        sum += box.surface() + box.smallest_side_area();
+        wrapping_paper_area += box.surface() + box.smallest_side_area();
     }
 
-    std::cout << sum << std::endl;
+    std::cout << wrapping_paper_area << std::endl;
 
     return 0;
 }
